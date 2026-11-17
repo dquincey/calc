@@ -11,6 +11,7 @@ FetchContent_Declare(ftxui
   GIT_TAG v7.0.3
 )
 FetchContent_MakeAvailable(ftxui)
-
-add_executable(calc src/main.cpp)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(calc ${SOURCES})
+target_include_directories(calc PRIVATE src)
 target_link_libraries(calc PRIVATE ftxui::ftxui)

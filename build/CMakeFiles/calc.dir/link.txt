@@ -1,0 +1,1 @@
+/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/calc.dir/link.d CMakeFiles/calc.dir/src/input.cpp.o CMakeFiles/calc.dir/src/render.cpp.o CMakeFiles/calc.dir/src/ui.cpp.o -o calc  _deps/ftxui-build/libftxui-component.a _deps/ftxui-build/libftxui-dom.a _deps/ftxui-build/libftxui-screen.a

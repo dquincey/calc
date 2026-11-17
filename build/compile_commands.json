@@ -1,9 +1,21 @@
 [
 {
   "directory": "/home/dtonmai/calc/build",
-  "command": "/usr/sbin/c++  -isystem /home/dtonmai/calc/build/_deps/ftxui-src/include -std=gnu++17 -o CMakeFiles/calc.dir/src/main.cpp.o -c /home/dtonmai/calc/src/main.cpp",
-  "file": "/home/dtonmai/calc/src/main.cpp",
-  "output": "CMakeFiles/calc.dir/src/main.cpp.o"
+  "command": "/usr/sbin/c++  -I/home/dtonmai/calc/src -isystem /home/dtonmai/calc/build/_deps/ftxui-src/include -std=gnu++17 -o CMakeFiles/calc.dir/src/input.cpp.o -c /home/dtonmai/calc/src/input.cpp",
+  "file": "/home/dtonmai/calc/src/input.cpp",
+  "output": "CMakeFiles/calc.dir/src/input.cpp.o"
+},
+{
+  "directory": "/home/dtonmai/calc/build",
+  "command": "/usr/sbin/c++  -I/home/dtonmai/calc/src -isystem /home/dtonmai/calc/build/_deps/ftxui-src/include -std=gnu++17 -o CMakeFiles/calc.dir/src/render.cpp.o -c /home/dtonmai/calc/src/render.cpp",
+  "file": "/home/dtonmai/calc/src/render.cpp",
+  "output": "CMakeFiles/calc.dir/src/render.cpp.o"
+},
+{
+  "directory": "/home/dtonmai/calc/build",
+  "command": "/usr/sbin/c++  -I/home/dtonmai/calc/src -isystem /home/dtonmai/calc/build/_deps/ftxui-src/include -std=gnu++17 -o CMakeFiles/calc.dir/src/ui.cpp.o -c /home/dtonmai/calc/src/ui.cpp",
+  "file": "/home/dtonmai/calc/src/ui.cpp",
+  "output": "CMakeFiles/calc.dir/src/ui.cpp.o"
 },
 {
   "directory": "/home/dtonmai/calc/build/_deps/ftxui-build",
