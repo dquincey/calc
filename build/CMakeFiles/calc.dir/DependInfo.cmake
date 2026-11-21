@@ -8,9 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dtonmai/calc/src/input.cpp" "CMakeFiles/calc.dir/src/input.cpp.o" "gcc" "CMakeFiles/calc.dir/src/input.cpp.o.d"
-  "/home/dtonmai/calc/src/render.cpp" "CMakeFiles/calc.dir/src/render.cpp.o" "gcc" "CMakeFiles/calc.dir/src/render.cpp.o.d"
-  "/home/dtonmai/calc/src/ui.cpp" "CMakeFiles/calc.dir/src/ui.cpp.o" "gcc" "CMakeFiles/calc.dir/src/ui.cpp.o.d"
+  "/home/dtonmai/calc/src/draw.cpp" "CMakeFiles/calc.dir/src/draw.cpp.o" "gcc" "CMakeFiles/calc.dir/src/draw.cpp.o.d"
+  "/home/dtonmai/calc/src/main.cpp" "CMakeFiles/calc.dir/src/main.cpp.o" "gcc" "CMakeFiles/calc.dir/src/main.cpp.o.d"
+  "/home/dtonmai/calc/src/stack.cpp" "CMakeFiles/calc.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calc.dir/src/stack.cpp.o.d"
+  "/home/dtonmai/calc/src/textbox.cpp" "CMakeFiles/calc.dir/src/textbox.cpp.o" "gcc" "CMakeFiles/calc.dir/src/textbox.cpp.o.d"
   "" "calc" "gcc" "CMakeFiles/calc.dir/link.d"
   )
 

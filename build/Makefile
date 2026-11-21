@@ -68,26 +68,6 @@ CMAKE_BINARY_DIR = /home/dtonmai/calc/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target package
-package: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cpack --config ./CPackConfig.cmake
-.PHONY : package
-
-# Special rule for the target package
-package/fast: package
-.PHONY : package/fast
-
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cpack --config ./CPackSourceConfig.cmake
-.PHONY : package_source
-
-# Special rule for the target package_source
-package_source/fast: package_source
-.PHONY : package_source/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -107,51 +87,6 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	$(CMAKE_USES_TERMINAL_PREFIX)/usr/sbin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -198,45 +133,6 @@ calc/fast:
 .PHONY : calc/fast
 
 #=============================================================================
-# Target rules for targets named screen
-
-# Build rule for target.
-screen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 screen
-.PHONY : screen
-
-# fast build rule for target.
-screen/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/screen.dir/build.make _deps/ftxui-build/CMakeFiles/screen.dir/build
-.PHONY : screen/fast
-
-#=============================================================================
-# Target rules for targets named dom
-
-# Build rule for target.
-dom: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dom
-.PHONY : dom
-
-# fast build rule for target.
-dom/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/dom.dir/build.make _deps/ftxui-build/CMakeFiles/dom.dir/build
-.PHONY : dom/fast
-
-#=============================================================================
-# Target rules for targets named component
-
-# Build rule for target.
-component: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 component
-.PHONY : component
-
-# fast build rule for target.
-component/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/ftxui-build/CMakeFiles/component.dir/build.make _deps/ftxui-build/CMakeFiles/component.dir/build
-.PHONY : component/fast
-
-#=============================================================================
 # Convenience rules to build test dependencies.
 
 # Build the dependencies of a test.
@@ -244,85 +140,101 @@ test_prep/all: cmake_check_build_system
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_prep/all
 .PHONY : test_prep/all
 
-install_prep/Unspecified: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 install_prep/Unspecified
-.PHONY : install_prep/Unspecified
-
-install_prep/all: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 install_prep/all
-.PHONY : install_prep/all
-
-src/input.o: src/input.cpp.o
-.PHONY : src/input.o
+src/draw.o: src/draw.cpp.o
+.PHONY : src/draw.o
 
 # target to build an object file
-src/input.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/input.cpp.o
-.PHONY : src/input.cpp.o
+src/draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/draw.cpp.o
+.PHONY : src/draw.cpp.o
 
-src/input.i: src/input.cpp.i
-.PHONY : src/input.i
+src/draw.i: src/draw.cpp.i
+.PHONY : src/draw.i
 
 # target to preprocess a source file
-src/input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/input.cpp.i
-.PHONY : src/input.cpp.i
+src/draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/draw.cpp.i
+.PHONY : src/draw.cpp.i
 
-src/input.s: src/input.cpp.s
-.PHONY : src/input.s
+src/draw.s: src/draw.cpp.s
+.PHONY : src/draw.s
 
 # target to generate assembly for a file
-src/input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/input.cpp.s
-.PHONY : src/input.cpp.s
+src/draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/draw.cpp.s
+.PHONY : src/draw.cpp.s
 
-src/render.o: src/render.cpp.o
-.PHONY : src/render.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/render.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/render.cpp.o
-.PHONY : src/render.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/render.i: src/render.cpp.i
-.PHONY : src/render.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/render.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/render.cpp.i
-.PHONY : src/render.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/render.s: src/render.cpp.s
-.PHONY : src/render.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/render.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/render.cpp.s
-.PHONY : src/render.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-src/ui.o: src/ui.cpp.o
-.PHONY : src/ui.o
+src/stack.o: src/stack.cpp.o
+.PHONY : src/stack.o
 
 # target to build an object file
-src/ui.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/ui.cpp.o
-.PHONY : src/ui.cpp.o
+src/stack.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/stack.cpp.o
+.PHONY : src/stack.cpp.o
 
-src/ui.i: src/ui.cpp.i
-.PHONY : src/ui.i
+src/stack.i: src/stack.cpp.i
+.PHONY : src/stack.i
 
 # target to preprocess a source file
-src/ui.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/ui.cpp.i
-.PHONY : src/ui.cpp.i
+src/stack.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/stack.cpp.i
+.PHONY : src/stack.cpp.i
 
-src/ui.s: src/ui.cpp.s
-.PHONY : src/ui.s
+src/stack.s: src/stack.cpp.s
+.PHONY : src/stack.s
 
 # target to generate assembly for a file
-src/ui.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/ui.cpp.s
-.PHONY : src/ui.cpp.s
+src/stack.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/stack.cpp.s
+.PHONY : src/stack.cpp.s
+
+src/textbox.o: src/textbox.cpp.o
+.PHONY : src/textbox.o
+
+# target to build an object file
+src/textbox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/textbox.cpp.o
+.PHONY : src/textbox.cpp.o
+
+src/textbox.i: src/textbox.cpp.i
+.PHONY : src/textbox.i
+
+# target to preprocess a source file
+src/textbox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/textbox.cpp.i
+.PHONY : src/textbox.cpp.i
+
+src/textbox.s: src/textbox.cpp.s
+.PHONY : src/textbox.s
+
+# target to generate assembly for a file
+src/textbox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/textbox.cpp.s
+.PHONY : src/textbox.cpp.s
 
 # Help Target
 help:
@@ -331,26 +243,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... package"
-	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... calc"
-	@echo "... component"
-	@echo "... dom"
-	@echo "... screen"
-	@echo "... src/input.o"
-	@echo "... src/input.i"
-	@echo "... src/input.s"
-	@echo "... src/render.o"
-	@echo "... src/render.i"
-	@echo "... src/render.s"
-	@echo "... src/ui.o"
-	@echo "... src/ui.i"
-	@echo "... src/ui.s"
+	@echo "... src/draw.o"
+	@echo "... src/draw.i"
+	@echo "... src/draw.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/stack.o"
+	@echo "... src/stack.i"
+	@echo "... src/stack.s"
+	@echo "... src/textbox.o"
+	@echo "... src/textbox.i"
+	@echo "... src/textbox.s"
 .PHONY : help
 
 

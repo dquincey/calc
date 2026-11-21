@@ -75,67 +75,80 @@ include CMakeFiles/calc.dir/flags.make
 CMakeFiles/calc.dir/codegen:
 .PHONY : CMakeFiles/calc.dir/codegen
 
-CMakeFiles/calc.dir/src/input.cpp.o: CMakeFiles/calc.dir/flags.make
-CMakeFiles/calc.dir/src/input.cpp.o: /home/dtonmai/calc/src/input.cpp
-CMakeFiles/calc.dir/src/input.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc.dir/src/input.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/input.cpp.o -MF CMakeFiles/calc.dir/src/input.cpp.o.d -o CMakeFiles/calc.dir/src/input.cpp.o -c /home/dtonmai/calc/src/input.cpp
+CMakeFiles/calc.dir/src/main.cpp.o: CMakeFiles/calc.dir/flags.make
+CMakeFiles/calc.dir/src/main.cpp.o: /home/dtonmai/calc/src/main.cpp
+CMakeFiles/calc.dir/src/main.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/calc.dir/src/main.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/main.cpp.o -MF CMakeFiles/calc.dir/src/main.cpp.o.d -o CMakeFiles/calc.dir/src/main.cpp.o -c /home/dtonmai/calc/src/main.cpp
 
-CMakeFiles/calc.dir/src/input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/input.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/input.cpp > CMakeFiles/calc.dir/src/input.cpp.i
+CMakeFiles/calc.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/main.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/main.cpp > CMakeFiles/calc.dir/src/main.cpp.i
 
-CMakeFiles/calc.dir/src/input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/input.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/input.cpp -o CMakeFiles/calc.dir/src/input.cpp.s
+CMakeFiles/calc.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/main.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/main.cpp -o CMakeFiles/calc.dir/src/main.cpp.s
 
-CMakeFiles/calc.dir/src/render.cpp.o: CMakeFiles/calc.dir/flags.make
-CMakeFiles/calc.dir/src/render.cpp.o: /home/dtonmai/calc/src/render.cpp
-CMakeFiles/calc.dir/src/render.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calc.dir/src/render.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/render.cpp.o -MF CMakeFiles/calc.dir/src/render.cpp.o.d -o CMakeFiles/calc.dir/src/render.cpp.o -c /home/dtonmai/calc/src/render.cpp
+CMakeFiles/calc.dir/src/draw.cpp.o: CMakeFiles/calc.dir/flags.make
+CMakeFiles/calc.dir/src/draw.cpp.o: /home/dtonmai/calc/src/draw.cpp
+CMakeFiles/calc.dir/src/draw.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/calc.dir/src/draw.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/draw.cpp.o -MF CMakeFiles/calc.dir/src/draw.cpp.o.d -o CMakeFiles/calc.dir/src/draw.cpp.o -c /home/dtonmai/calc/src/draw.cpp
 
-CMakeFiles/calc.dir/src/render.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/render.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/render.cpp > CMakeFiles/calc.dir/src/render.cpp.i
+CMakeFiles/calc.dir/src/draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/draw.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/draw.cpp > CMakeFiles/calc.dir/src/draw.cpp.i
 
-CMakeFiles/calc.dir/src/render.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/render.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/render.cpp -o CMakeFiles/calc.dir/src/render.cpp.s
+CMakeFiles/calc.dir/src/draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/draw.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/draw.cpp -o CMakeFiles/calc.dir/src/draw.cpp.s
 
-CMakeFiles/calc.dir/src/ui.cpp.o: CMakeFiles/calc.dir/flags.make
-CMakeFiles/calc.dir/src/ui.cpp.o: /home/dtonmai/calc/src/ui.cpp
-CMakeFiles/calc.dir/src/ui.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calc.dir/src/ui.cpp.o"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/ui.cpp.o -MF CMakeFiles/calc.dir/src/ui.cpp.o.d -o CMakeFiles/calc.dir/src/ui.cpp.o -c /home/dtonmai/calc/src/ui.cpp
+CMakeFiles/calc.dir/src/stack.cpp.o: CMakeFiles/calc.dir/flags.make
+CMakeFiles/calc.dir/src/stack.cpp.o: /home/dtonmai/calc/src/stack.cpp
+CMakeFiles/calc.dir/src/stack.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/calc.dir/src/stack.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/stack.cpp.o -MF CMakeFiles/calc.dir/src/stack.cpp.o.d -o CMakeFiles/calc.dir/src/stack.cpp.o -c /home/dtonmai/calc/src/stack.cpp
 
-CMakeFiles/calc.dir/src/ui.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/ui.cpp.i"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/ui.cpp > CMakeFiles/calc.dir/src/ui.cpp.i
+CMakeFiles/calc.dir/src/stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/stack.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/stack.cpp > CMakeFiles/calc.dir/src/stack.cpp.i
 
-CMakeFiles/calc.dir/src/ui.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/ui.cpp.s"
-	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/ui.cpp -o CMakeFiles/calc.dir/src/ui.cpp.s
+CMakeFiles/calc.dir/src/stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/stack.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/stack.cpp -o CMakeFiles/calc.dir/src/stack.cpp.s
+
+CMakeFiles/calc.dir/src/textbox.cpp.o: CMakeFiles/calc.dir/flags.make
+CMakeFiles/calc.dir/src/textbox.cpp.o: /home/dtonmai/calc/src/textbox.cpp
+CMakeFiles/calc.dir/src/textbox.cpp.o: CMakeFiles/calc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/calc.dir/src/textbox.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/calc.dir/src/textbox.cpp.o -MF CMakeFiles/calc.dir/src/textbox.cpp.o.d -o CMakeFiles/calc.dir/src/textbox.cpp.o -c /home/dtonmai/calc/src/textbox.cpp
+
+CMakeFiles/calc.dir/src/textbox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/calc.dir/src/textbox.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dtonmai/calc/src/textbox.cpp > CMakeFiles/calc.dir/src/textbox.cpp.i
+
+CMakeFiles/calc.dir/src/textbox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/calc.dir/src/textbox.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dtonmai/calc/src/textbox.cpp -o CMakeFiles/calc.dir/src/textbox.cpp.s
 
 # Object files for target calc
 calc_OBJECTS = \
-"CMakeFiles/calc.dir/src/input.cpp.o" \
-"CMakeFiles/calc.dir/src/render.cpp.o" \
-"CMakeFiles/calc.dir/src/ui.cpp.o"
+"CMakeFiles/calc.dir/src/main.cpp.o" \
+"CMakeFiles/calc.dir/src/draw.cpp.o" \
+"CMakeFiles/calc.dir/src/stack.cpp.o" \
+"CMakeFiles/calc.dir/src/textbox.cpp.o"
 
 # External object files for target calc
 calc_EXTERNAL_OBJECTS =
 
-calc: CMakeFiles/calc.dir/src/input.cpp.o
-calc: CMakeFiles/calc.dir/src/render.cpp.o
-calc: CMakeFiles/calc.dir/src/ui.cpp.o
+calc: CMakeFiles/calc.dir/src/main.cpp.o
+calc: CMakeFiles/calc.dir/src/draw.cpp.o
+calc: CMakeFiles/calc.dir/src/stack.cpp.o
+calc: CMakeFiles/calc.dir/src/textbox.cpp.o
 calc: CMakeFiles/calc.dir/build.make
 calc: CMakeFiles/calc.dir/compiler_depend.ts
-calc: _deps/ftxui-build/libftxui-component.a
-calc: _deps/ftxui-build/libftxui-dom.a
-calc: _deps/ftxui-build/libftxui-screen.a
 calc: CMakeFiles/calc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable calc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dtonmai/calc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable calc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

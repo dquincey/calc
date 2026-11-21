@@ -4,7 +4,7 @@
 # compile CXX with /usr/sbin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dtonmai/calc/src -isystem /home/dtonmai/calc/build/_deps/ftxui-src/include
+CXX_INCLUDES = 
 
 CXX_FLAGS = -std=gnu++17
 

@@ -2,12 +2,10 @@ calc: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \
-  CMakeFiles/calc.dir/src/input.cpp.o \
-  CMakeFiles/calc.dir/src/render.cpp.o \
-  CMakeFiles/calc.dir/src/ui.cpp.o \
-  _deps/ftxui-build/libftxui-component.a \
-  _deps/ftxui-build/libftxui-dom.a \
-  _deps/ftxui-build/libftxui-screen.a \
+  CMakeFiles/calc.dir/src/main.cpp.o \
+  CMakeFiles/calc.dir/src/draw.cpp.o \
+  CMakeFiles/calc.dir/src/stack.cpp.o \
+  CMakeFiles/calc.dir/src/textbox.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -37,7 +35,8 @@ calc: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+  /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o \
+  /usr/lib/ld-linux-x86-64.so.2
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o:
 
@@ -45,17 +44,13 @@ calc: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o:
 
-CMakeFiles/calc.dir/src/input.cpp.o:
+CMakeFiles/calc.dir/src/main.cpp.o:
 
-CMakeFiles/calc.dir/src/render.cpp.o:
+CMakeFiles/calc.dir/src/draw.cpp.o:
 
-CMakeFiles/calc.dir/src/ui.cpp.o:
+CMakeFiles/calc.dir/src/stack.cpp.o:
 
-_deps/ftxui-build/libftxui-component.a:
-
-_deps/ftxui-build/libftxui-dom.a:
-
-_deps/ftxui-build/libftxui-screen.a:
+CMakeFiles/calc.dir/src/textbox.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 
@@ -116,3 +111,5 @@ _deps/ftxui-build/libftxui-screen.a:
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o:
+
+/usr/lib/ld-linux-x86-64.so.2:
