@@ -17,7 +17,12 @@ Stack::Stack(int X1, int Y1, int X2, int Y2) {
 }
 
 void Stack::push_stack(std::string *number) {
-    number_stack.emplace_back(std::stod(*number));
+    if (number_stack.size() > 0) {
+        number_stack.insert(number_stack.begin() + focus + 1, std::stod(*number));
+    } else {
+        number_stack.emplace_back(std::stod(*number));
+    }
+    change_focus(1);
     *number = "";
 }
 
@@ -26,10 +31,9 @@ void Stack::render() {
     int index = 0;
     for (double i : Stack::number_stack) {
         if (index == focus) {
-
             tb_print(Stack::x1 + 1, Stack::y1 + index + 1, TB_RED | TB_BOLD, TB_DEFAULT, "> ");
             if (select_mode && maths::is_between(select_origin, focus, index)) {
-                tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_BOLD | TB_REVERSE, TB_DEFAULT,
+                tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_REVERSE, TB_DEFAULT,
                          std::string(std::to_string(i)).c_str());
             } else {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_BOLD, TB_DEFAULT,
