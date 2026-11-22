@@ -1,13 +1,11 @@
+#include <iostream>
 #include <string>
+#include <utility>
 namespace maths {
-double calculate_string(std::string &string) {
-    char first_non_space = '0';
-    for (int i; i < static_cast<int>(string.size()); i++) {
-        if (string[i] != ' ') {
-            first_non_space = string[i];
-            break;
-        }
+bool is_between(int low, int high, int val) {
+    if (low > high) {
+        std::swap(low, high);
     }
-    return 0;
+    return (val >= low && val <= high);
 }
 } // namespace maths

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/calc.dir/src/draw.cpp.o.d"
   "CMakeFiles/calc.dir/src/main.cpp.o"
   "CMakeFiles/calc.dir/src/main.cpp.o.d"
+  "CMakeFiles/calc.dir/src/maths.cpp.o"
+  "CMakeFiles/calc.dir/src/maths.cpp.o.d"
   "CMakeFiles/calc.dir/src/stack.cpp.o"
   "CMakeFiles/calc.dir/src/stack.cpp.o.d"
   "CMakeFiles/calc.dir/src/textbox.cpp.o"

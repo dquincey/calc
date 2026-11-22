@@ -188,6 +188,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/maths.o: src/maths.cpp.o
+.PHONY : src/maths.o
+
+# target to build an object file
+src/maths.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/maths.cpp.o
+.PHONY : src/maths.cpp.o
+
+src/maths.i: src/maths.cpp.i
+.PHONY : src/maths.i
+
+# target to preprocess a source file
+src/maths.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/maths.cpp.i
+.PHONY : src/maths.cpp.i
+
+src/maths.s: src/maths.cpp.s
+.PHONY : src/maths.s
+
+# target to generate assembly for a file
+src/maths.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/src/maths.cpp.s
+.PHONY : src/maths.cpp.s
+
 src/stack.o: src/stack.cpp.o
 .PHONY : src/stack.o
 
@@ -251,6 +275,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/maths.o"
+	@echo "... src/maths.i"
+	@echo "... src/maths.s"
 	@echo "... src/stack.o"
 	@echo "... src/stack.i"
 	@echo "... src/stack.s"

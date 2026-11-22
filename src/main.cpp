@@ -33,6 +33,15 @@ int main() {
         if (ev.key == TB_KEY_BACKSPACE || ev.key == TB_KEY_BACKSPACE2) {
             text_box.backspace();
         }
+        if (ev.ch == 'j') {
+            number_stack.change_focus(1);
+        }
+        if (ev.ch == 'k') {
+            number_stack.change_focus(-1);
+        }
+        if (ev.ch == 'v') {
+            number_stack.toggle_select_mode();
+        }
         tb_clear();
         text_box.render();
         number_stack.render();

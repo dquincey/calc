@@ -1,1 +1,1 @@
-/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/calc.dir/link.d CMakeFiles/calc.dir/src/main.cpp.o CMakeFiles/calc.dir/src/draw.cpp.o CMakeFiles/calc.dir/src/stack.cpp.o CMakeFiles/calc.dir/src/textbox.cpp.o -o calc
+/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/calc.dir/link.d CMakeFiles/calc.dir/src/main.cpp.o CMakeFiles/calc.dir/src/draw.cpp.o CMakeFiles/calc.dir/src/stack.cpp.o CMakeFiles/calc.dir/src/textbox.cpp.o CMakeFiles/calc.dir/src/maths.cpp.o -o calc

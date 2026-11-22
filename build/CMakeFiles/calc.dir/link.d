@@ -6,6 +6,7 @@ calc: \
   CMakeFiles/calc.dir/src/draw.cpp.o \
   CMakeFiles/calc.dir/src/stack.cpp.o \
   CMakeFiles/calc.dir/src/textbox.cpp.o \
+  CMakeFiles/calc.dir/src/maths.cpp.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/libm.so \
@@ -51,6 +52,8 @@ CMakeFiles/calc.dir/src/draw.cpp.o:
 CMakeFiles/calc.dir/src/stack.cpp.o:
 
 CMakeFiles/calc.dir/src/textbox.cpp.o:
+
+CMakeFiles/calc.dir/src/maths.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libstdc++.so:
 

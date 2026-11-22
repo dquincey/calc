@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/dtonmai/calc/src/draw.cpp" "CMakeFiles/calc.dir/src/draw.cpp.o" "gcc" "CMakeFiles/calc.dir/src/draw.cpp.o.d"
   "/home/dtonmai/calc/src/main.cpp" "CMakeFiles/calc.dir/src/main.cpp.o" "gcc" "CMakeFiles/calc.dir/src/main.cpp.o.d"
+  "/home/dtonmai/calc/src/maths.cpp" "CMakeFiles/calc.dir/src/maths.cpp.o" "gcc" "CMakeFiles/calc.dir/src/maths.cpp.o.d"
   "/home/dtonmai/calc/src/stack.cpp" "CMakeFiles/calc.dir/src/stack.cpp.o" "gcc" "CMakeFiles/calc.dir/src/stack.cpp.o.d"
   "/home/dtonmai/calc/src/textbox.cpp" "CMakeFiles/calc.dir/src/textbox.cpp.o" "gcc" "CMakeFiles/calc.dir/src/textbox.cpp.o.d"
   "" "calc" "gcc" "CMakeFiles/calc.dir/link.d"
