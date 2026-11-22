@@ -27,20 +27,29 @@ int main() {
                 text_box.push_char(ev.ch);
         }
         if (ev.key == TB_KEY_ENTER) {
-            if (*text_box.get_text() != "")
+            if (*text_box.get_text() != "") {
+
                 number_stack.push_stack(text_box.get_text());
+                text_box.clear();
+            }
         }
         if (ev.key == TB_KEY_BACKSPACE || ev.key == TB_KEY_BACKSPACE2) {
             text_box.backspace();
         }
-        if (ev.ch == 'j') {
+        if (ev.ch == 'j' || ev.key == TB_KEY_ARROW_DOWN) {
             number_stack.change_focus(1);
         }
-        if (ev.ch == 'k') {
+        if (ev.ch == 'k' || ev.key == TB_KEY_ARROW_UP) {
             number_stack.change_focus(-1);
         }
         if (ev.ch == 'v') {
             number_stack.toggle_select_mode();
+        }
+        if (ev.key == TB_KEY_ARROW_LEFT) {
+            text_box.move_cursor(-1);
+        }
+        if (ev.key == TB_KEY_ARROW_RIGHT) {
+            text_box.move_cursor(1);
         }
         tb_clear();
         text_box.render();

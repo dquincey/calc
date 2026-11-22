@@ -23,7 +23,6 @@ void Stack::push_stack(std::string *number) {
         number_stack.emplace_back(std::stod(*number));
     }
     change_focus(1);
-    *number = "";
 }
 
 void Stack::render() {

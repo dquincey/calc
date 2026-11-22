@@ -1130,8 +1130,10 @@ CMakeFiles/calc.dir/src/textbox.cpp.o: /home/dtonmai/calc/src/textbox.cpp \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/c++/16/algorithm \
   /usr/include/c++/16/backward/binders.h \
   /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/algorithmfwd.h \
   /usr/include/c++/16/bits/alloc_traits.h \
   /usr/include/c++/16/bits/allocator.h \
   /usr/include/c++/16/bits/basic_ios.h \
@@ -1179,17 +1181,21 @@ CMakeFiles/calc.dir/src/textbox.cpp.o: /home/dtonmai/calc/src/textbox.cpp \
   /usr/include/c++/16/bits/stdexcept_except.h \
   /usr/include/c++/16/bits/stdexcept_throw.h \
   /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algo.h \
   /usr/include/c++/16/bits/stl_algobase.h \
   /usr/include/c++/16/bits/stl_construct.h \
   /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_heap.h \
   /usr/include/c++/16/bits/stl_iterator.h \
   /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/16/bits/stl_iterator_base_types.h \
   /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/stl_tempbuf.h \
   /usr/include/c++/16/bits/streambuf.tcc \
   /usr/include/c++/16/bits/streambuf_iterator.h \
   /usr/include/c++/16/bits/string_view.tcc \
   /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/uniform_int_dist.h \
   /usr/include/c++/16/bits/uses_allocator.h \
   /usr/include/c++/16/bits/uses_allocator_args.h \
   /usr/include/c++/16/bits/utility.h \
@@ -1218,6 +1224,8 @@ CMakeFiles/calc.dir/src/textbox.cpp.o: /home/dtonmai/calc/src/textbox.cpp \
   /usr/include/c++/16/istream \
   /usr/include/c++/16/new \
   /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
   /usr/include/c++/16/pstl/pstl_config.h \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/stdlib.h \
@@ -1345,6 +1353,16 @@ CMakeFiles/calc.dir/src/stack.cpp.o:
 
 /usr/lib/Scrt1.o:
 
+/usr/include/c++/16/bits/uniform_int_dist.h:
+
+/usr/include/c++/16/bits/stl_heap.h:
+
+/usr/include/c++/16/bits/stl_algo.h:
+
+/usr/include/c++/16/bits/algorithmfwd.h:
+
+/usr/include/c++/16/algorithm:
+
 /home/dtonmai/calc/src/textbox.cpp:
 
 /usr/lib/ld-linux-x86-64.so.2:
@@ -1362,6 +1380,8 @@ CMakeFiles/calc.dir/src/stack.cpp.o:
 /usr/include/pthread.h:
 
 /usr/include/locale.h:
+
+/usr/include/c++/16/bits/stl_tempbuf.h:
 
 /usr/include/ctype.h:
 
@@ -1400,6 +1420,8 @@ CMakeFiles/calc.dir/src/maths.cpp.o:
 /usr/include/c++/16/ext/alloc_traits.h:
 
 /usr/include/c++/16/exception:
+
+/usr/include/c++/16/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/16/debug/assertions.h:
 
@@ -1456,6 +1478,8 @@ CMakeFiles/calc.dir/src/maths.cpp.o:
 /usr/include/bits/time64.h:
 
 /usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/16/pstl/execution_defs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/limits.h:
 

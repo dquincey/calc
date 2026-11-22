@@ -4,6 +4,7 @@ namespace textbox {
 class Textbox {
 
   private:
+    int cursor_position = 0;
     int x1, x2, y1, y2;
     std::string text = "";
     int string_pos_x, string_pos_y;
@@ -11,6 +12,7 @@ class Textbox {
   public:
     void render();
     void push_char(const char &character);
+    void move_cursor(int change);
     void clear();
     void backspace();
     Textbox();
