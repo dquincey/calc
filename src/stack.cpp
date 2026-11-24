@@ -33,19 +33,19 @@ void Stack::render() {
             tb_print(Stack::x1 + 1, Stack::y1 + index + 1, TB_RED | TB_BOLD, TB_DEFAULT, "> ");
             if (select_mode && maths::is_between(select_origin, focus, index)) {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_REVERSE, TB_DEFAULT,
-                         std::string(std::to_string(i)).c_str());
+                         std::string(maths::format_double(i)).c_str());
             } else {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_BOLD, TB_DEFAULT,
-                         std::string(std::to_string(i)).c_str());
+                         std::string(maths::format_double(i)).c_str());
             }
         } else {
             tb_print(Stack::x1 + 1, Stack::y1 + index + 1, TB_DEFAULT, TB_DEFAULT, "  ");
             if (select_mode && maths::is_between(select_origin, focus, index)) {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_REVERSE, TB_DEFAULT,
-                         std::string(std::to_string(i)).c_str());
+                         std::string(maths::format_double(i)).c_str());
             } else {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT, TB_DEFAULT,
-                         std::string(std::to_string(i)).c_str());
+                         std::string(maths::format_double(i)).c_str());
             }
         }
         index++;

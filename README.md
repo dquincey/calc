@@ -17,6 +17,18 @@ Keep in mind that I termbox2 only gives you the ability to get input, move the c
 
 But yeah doesn't really work as a calculator yet.
 ## If you wanna try it for some reason
-Go to the releases and follow the instructions there.
 
+_This will only work with linux_
 
+Go to the releases and ideally click the top one.
+
+### Installation process
+
+-    Press on the **calc** file located at the bottom of a release page. It should go to your `~/Downloads` folder.
+-    Open the terminal
+-    Then you can run `cd ~/Downloads/` To get into the downloads
+-    Run `chmod +x calc`
+
+You can now run it with `./calc`
+
+Press **escape** or **q**  to exit.
