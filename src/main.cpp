@@ -42,6 +42,13 @@ int main() {
         if (ev.ch == 'k' || ev.key == TB_KEY_ARROW_UP) {
             number_stack.change_focus(-1);
         }
+
+        if (ev.ch == 'J') {
+            number_stack.move(1);
+        }
+        if (ev.ch == 'K') {
+            number_stack.move(-1);
+        }
         if (ev.ch == 'v') {
             number_stack.toggle_select_mode();
         }

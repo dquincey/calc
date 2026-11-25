@@ -153,9 +153,16 @@ CMakeFiles/calc.dir/src/stack.cpp.o: /home/dtonmai/calc/src/stack.cpp \
  /usr/include/bits/termios-c_cflag.h /usr/include/bits/termios-cbaud.h \
  /usr/include/bits/termios-c_lflag.h /usr/include/bits/termios-tcflow.h \
  /usr/include/bits/termios-misc.h /usr/include/bits/termios-baud.h \
- /usr/include/c++/16/iostream /usr/include/c++/16/ostream \
- /usr/include/c++/16/bits/ostream.h /usr/include/c++/16/ios \
- /usr/include/c++/16/exception /usr/include/c++/16/bits/exception_ptr.h \
+ /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
+ /usr/include/c++/16/bits/algorithmfwd.h \
+ /usr/include/c++/16/bits/stl_heap.h \
+ /usr/include/c++/16/bits/uniform_int_dist.h \
+ /usr/include/c++/16/bits/stl_tempbuf.h \
+ /usr/include/c++/16/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/16/pstl/execution_defs.h /usr/include/c++/16/iostream \
+ /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream.h \
+ /usr/include/c++/16/ios /usr/include/c++/16/exception \
+ /usr/include/c++/16/bits/exception_ptr.h \
  /usr/include/c++/16/bits/cxxabi_init_exception.h \
  /usr/include/c++/16/typeinfo /usr/include/c++/16/bits/nested_exception.h \
  /usr/include/c++/16/bits/ios_base.h /usr/include/c++/16/ext/atomicity.h \

@@ -12,10 +12,12 @@ class Stack {
     bool select_mode = false;
 
   public:
+    const bool get_select_mode() const;
     Stack(int x1, int y1, int x2, int y2);
     void push_stack(std::string *number);
     void change_focus(int change);
     void toggle_select_mode();
     void render();
+    void move(int change);
 };
 } // namespace stack

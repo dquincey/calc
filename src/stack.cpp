@@ -2,6 +2,7 @@
 #include "draw.hpp"
 #include "maths.hpp"
 #include "termbox2.h"
+#include <algorithm>
 #include <iostream>
 #include <string>
 #include <type_traits>
@@ -44,7 +45,7 @@ void Stack::render() {
                 tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_REVERSE, TB_DEFAULT,
                          std::string(maths::format_double(i)).c_str());
             } else {
-                tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT, TB_DEFAULT,
+                tb_print(Stack::x1 + 3, Stack::y1 + index + 1, TB_DEFAULT | TB_DIM, TB_DEFAULT,
                          std::string(maths::format_double(i)).c_str());
             }
         }
@@ -53,8 +54,8 @@ void Stack::render() {
 }
 
 void Stack::change_focus(int change) {
-    if ((focus + change >= 0 && focus + change < number_stack.size())) {
-        focus += change;
+    if (!number_stack.empty()) {
+        focus = std::clamp(change + focus, 0, static_cast<int>(number_stack.size() - 1));
     }
 }
 void Stack::toggle_select_mode() {
@@ -62,5 +63,52 @@ void Stack::toggle_select_mode() {
     if (select_mode == true) {
         select_origin = focus;
     }
+}
+const bool Stack::get_select_mode() const { return select_mode; }
+void Stack::move(int change) {
+    int direction = change / std::abs(change);
+    if (select_mode == false) {
+        for (int i = 0; i < std::abs(change); i++) {
+            int current = focus + (i * direction);
+            int proposed = current + direction;
+            if (proposed < number_stack.size() && proposed >= 0) {
+                std::swap(number_stack[current], number_stack[proposed]);
+            }
+        }
+    } else {
+        auto [lower, higher] = std::minmax(focus, select_origin);
+        if (direction == -1) {
+            // start from the lowest
+            for (int i = 0; i < std::abs(change); i++) {
+                for (int j = lower; j <= higher; j++) {
+                    int current = j + (i * direction);
+                    int proposed = current + direction;
+                    if (proposed < number_stack.size() && proposed >= 0) {
+                        std::swap(number_stack[current], number_stack[proposed]);
+                        std::cerr << "works!" << std::endl;
+                    } else {
+                        std::cerr << "broken!" << std::endl;
+                        break;
+                    }
+                }
+            }
+        } else if (direction == 1) {
+            for (int i = 0; i < std::abs(change); i++) {
+                for (int j = direction == 1 ? higher : lower; j >= lower; j--) {
+                    int current = j + (i * direction);
+                    int proposed = current + direction;
+                    if (proposed < number_stack.size() && proposed >= 0) {
+                        std::swap(number_stack[current], number_stack[proposed]);
+                        std::cerr << "works!" << std::endl;
+                    } else {
+                        std::cerr << "broken!" << std::endl;
+                        break;
+                    }
+                }
+            }
+        }
+        select_origin += change;
+    }
+    change_focus(change);
 }
 } // namespace stack
