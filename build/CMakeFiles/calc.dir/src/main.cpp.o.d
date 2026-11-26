@@ -12,7 +12,7 @@ CMakeFiles/calc.dir/src/main.cpp.o: /home/dtonmai/calc/src/main.cpp \
  /usr/include/bits/time64.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h /home/dtonmai/calc/src/draw.hpp \
- /home/dtonmai/calc/src/stack.hpp /usr/include/c++/16/string \
+ /home/dtonmai/calc/src/maths.hpp /usr/include/c++/16/string \
  /usr/include/c++/16/bits/requires_hosted.h \
  /usr/include/c++/16/bits/stringfwd.h \
  /usr/include/c++/16/bits/memoryfwd.h /usr/include/c++/16/bits/version.h \
@@ -94,8 +94,8 @@ CMakeFiles/calc.dir/src/main.cpp.o: /home/dtonmai/calc/src/main.cpp \
  /usr/include/c++/16/bits/memory_resource.h /usr/include/c++/16/cstddef \
  /usr/include/c++/16/bits/uses_allocator.h \
  /usr/include/c++/16/bits/uses_allocator_args.h /usr/include/c++/16/tuple \
- /usr/include/c++/16/bits/invoke.h /usr/include/c++/16/vector \
- /usr/include/c++/16/bits/stl_uninitialized.h \
+ /usr/include/c++/16/bits/invoke.h /home/dtonmai/calc/src/stack.hpp \
+ /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc /home/dtonmai/calc/src/termbox2.h \

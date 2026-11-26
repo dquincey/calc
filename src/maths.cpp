@@ -1,3 +1,5 @@
+#include <algorithm>
+#include <cstdlib>
 #include <iostream>
 #include <utility>
 namespace maths {
@@ -26,4 +28,14 @@ std::string format_double(double num) {
     }
     return str;
 }
+int move_towards(int a, int b) {
+    int direction = (b - a) / std::abs(b - a);
+    auto [low, high] = std::minmax(a, b);
+    return std::clamp(a + direction, low, high);
+}
+
+double add(double a, double b) { return a + b; }
+double subtract(double a, double b) { return a - b; }
+double multiply(double a, double b) { return a * b; }
+double divide(double a, double b) { return a / b; }
 } // namespace maths

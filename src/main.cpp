@@ -1,6 +1,7 @@
 #include <cctype>
 #define TB_IMPL
 #include "draw.hpp"
+#include "maths.hpp"
 #include "stack.hpp"
 #include "termbox2.h"
 #include "textbox.hpp"
@@ -57,6 +58,18 @@ int main() {
         }
         if (ev.key == TB_KEY_ARROW_RIGHT) {
             text_box.move_cursor(1);
+        }
+        if (ev.ch == 'a') {
+            number_stack.do_operation(maths::add);
+        }
+        if (ev.ch == 'm') {
+            number_stack.do_operation(maths::multiply);
+        }
+        if (ev.ch == 'd') {
+            number_stack.do_operation(maths::divide);
+        }
+        if (ev.ch == 's') {
+            number_stack.do_operation(maths::subtract);
         }
         tb_clear();
         text_box.render();

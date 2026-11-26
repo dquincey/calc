@@ -13,6 +13,8 @@ class Stack {
 
   public:
     const bool get_select_mode() const;
+    void to_selected(double (*func)(double a, double b));
+    void do_operation(double (*func)(double a, double b));
     Stack(int x1, int y1, int x2, int y2);
     void push_stack(std::string *number);
     void change_focus(int change);

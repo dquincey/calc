@@ -176,6 +176,7 @@ CMakeFiles/calc.dir/src/draw.cpp.o: /home/dtonmai/calc/src/draw.cpp \
 
 CMakeFiles/calc.dir/src/main.cpp.o: /home/dtonmai/calc/src/main.cpp \
   /home/dtonmai/calc/src/draw.hpp \
+  /home/dtonmai/calc/src/maths.hpp \
   /home/dtonmai/calc/src/stack.hpp \
   /home/dtonmai/calc/src/termbox2.h \
   /home/dtonmai/calc/src/textbox.hpp \
@@ -550,8 +551,10 @@ CMakeFiles/calc.dir/src/maths.cpp.o: /home/dtonmai/calc/src/maths.cpp \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/c++/16/algorithm \
   /usr/include/c++/16/backward/binders.h \
   /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/algorithmfwd.h \
   /usr/include/c++/16/bits/alloc_traits.h \
   /usr/include/c++/16/bits/allocator.h \
   /usr/include/c++/16/bits/basic_ios.h \
@@ -599,18 +602,22 @@ CMakeFiles/calc.dir/src/maths.cpp.o: /home/dtonmai/calc/src/maths.cpp \
   /usr/include/c++/16/bits/stdexcept_except.h \
   /usr/include/c++/16/bits/stdexcept_throw.h \
   /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algo.h \
   /usr/include/c++/16/bits/stl_algobase.h \
   /usr/include/c++/16/bits/stl_construct.h \
   /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_heap.h \
   /usr/include/c++/16/bits/stl_iterator.h \
   /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/16/bits/stl_iterator_base_types.h \
   /usr/include/c++/16/bits/stl_pair.h \
   /usr/include/c++/16/bits/stl_relops.h \
+  /usr/include/c++/16/bits/stl_tempbuf.h \
   /usr/include/c++/16/bits/streambuf.tcc \
   /usr/include/c++/16/bits/streambuf_iterator.h \
   /usr/include/c++/16/bits/string_view.tcc \
   /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/uniform_int_dist.h \
   /usr/include/c++/16/bits/uses_allocator.h \
   /usr/include/c++/16/bits/uses_allocator_args.h \
   /usr/include/c++/16/bits/utility.h \
@@ -639,6 +646,8 @@ CMakeFiles/calc.dir/src/maths.cpp.o: /home/dtonmai/calc/src/maths.cpp \
   /usr/include/c++/16/istream \
   /usr/include/c++/16/new \
   /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
   /usr/include/c++/16/pstl/pstl_config.h \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/streambuf \
@@ -1373,10 +1382,6 @@ CMakeFiles/calc.dir/src/stack.cpp.o:
 
 /usr/include/c++/16/algorithm:
 
-/usr/lib/ld-linux-x86-64.so.2:
-
-/home/dtonmai/calc/src/maths.hpp:
-
 /usr/include/time.h:
 
 /usr/include/sys/single_threaded.h:
@@ -1440,6 +1445,8 @@ CMakeFiles/calc.dir/src/maths.cpp.o:
 /usr/include/c++/16/cstdio:
 
 /usr/include/c++/16/cstddef:
+
+/usr/include/c++/16/cerrno:
 
 /usr/include/bits/timesize.h:
 
@@ -1532,8 +1539,6 @@ CMakeFiles/calc.dir/src/maths.cpp.o:
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/16/bits/istream.tcc:
-
-/usr/include/c++/16/cerrno:
 
 /usr/include/c++/16/bits/locale_classes.tcc:
 
@@ -1926,6 +1931,10 @@ CMakeFiles/calc.dir/src/draw.cpp.o:
 /usr/include/asm-generic/ioctl.h:
 
 /home/dtonmai/calc/src/main.cpp:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/home/dtonmai/calc/src/maths.hpp:
 
 /usr/include/c++/16/x86_64-pc-linux-gnu/bits/c++config.h:
 
